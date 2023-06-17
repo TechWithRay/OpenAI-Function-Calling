@@ -63,11 +63,6 @@ def run_conversation(query):
 
         # Step 3, call the function
         # Note: the JSON response from the model may not be valid JSON
-        # function_response = function_to_call(
-        #     location=function_args.get("location"),
-        #     unit=function_args.get("unit"),
-        # )
-
         function_response = function_to_call(**function_args)
 
         # Step 4, send model the info on the function call and function response

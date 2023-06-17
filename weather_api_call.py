@@ -21,7 +21,7 @@ def get_current_weather(location, unit="Fahrenheit "):
     # change the unit for the api
     api_unit = "metric" if unit == "Celsius" else "imperial"
 
-    # Hand edge case, e.g. Sunnyvale, CA
+    # Handle edge case, e.g. Sunnyvale, CA
     location = location.split(",")[0] if "," in location else location
 
     url = BASE_URL.format(location, WEATHER_API_KEY, api_unit)

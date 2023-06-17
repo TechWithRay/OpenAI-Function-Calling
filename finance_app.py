@@ -53,11 +53,9 @@ def stock_trader(query):
 
         # Step3, call the function
         # Note: the JSON response from the model may not be valid JSON
-
         function_response = function_to_call(**function_args)
 
         # Step4: send model the info on the function call and function response
-
         second_response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo-0613",
             messages=[

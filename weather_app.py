@@ -1,5 +1,5 @@
-from consts import openai
 import json
+from consts import openai
 from weather_api_call import get_current_weather
 
 
